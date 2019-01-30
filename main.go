@@ -33,7 +33,6 @@ type response struct {
 var resp = make(chan response)
 
 func init(){
-
 	go func() {
 
         var (
@@ -74,14 +73,11 @@ func NewUser(username string, password string) (string, error){
 	return uuidNew.String(), nil
 }
 
-
-
 func main(){
 	var (
 		count int
 		userInfo []string
 	)
-
 
 	input := bufio.NewScanner(os.Stdin)
 START:
