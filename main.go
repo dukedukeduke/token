@@ -78,7 +78,6 @@ func main(){
 		count int
 		userInfo []string
 	)
-
 	input := bufio.NewScanner(os.Stdin)
 START:
 	fmt.Println("input register info here: ")
